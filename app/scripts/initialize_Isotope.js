@@ -26,7 +26,7 @@ var filterAllClicked = false;
 
 $('.filter-all-button').click(function(){
 	if (filterAllClicked == false) {
-		alert('show all of the photos in the gallery')
+		console.log('show all of the photos in the gallery')
 		filterAllClicked = true;
 	}	
 	$('.dynamic-gallery').isotope({ filter: '*' });
