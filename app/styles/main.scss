@@ -60,7 +60,7 @@ p {
     color: #575757;
 }
 
-@media (max-width: 420px) {
+@media (max-width: 500px) {
     p {
         font-size: 0.95em;
     }
@@ -192,6 +192,45 @@ textarea {
 }
 
 /* ---- Header ----- */
+
+header {
+    position: relative;
+}
+
+.filter-tip {
+    // visibility: hidden;
+    position: absolute;
+    left: 0;
+    top: 282px;
+    width: 360px;
+    height: 54px;
+    padding: 7px 7px 7px 12px;
+    background-color: #E3472E;
+
+    p {
+        font-size: 1em;
+        line-height: 1.2em;
+        color: #FFF;
+    }
+}
+
+@media (max-width: 1000px){
+    .filter-tip {
+        top: 342px;
+    }
+}
+
+@media (max-width: 680px){
+    .filter-tip {
+        top: 400px;
+    }
+}
+
+@media (max-width: 500px){
+    .filter-tip {
+        top: 372px;
+    }
+}
 
 .logo {
     display: block;
