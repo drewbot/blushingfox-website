@@ -107,6 +107,7 @@ img {
         
         & p {
             max-width: 340px;
+            font-size: 0.95em;
         }
     }
 }
@@ -221,12 +222,6 @@ header {
 }
 
 @media (max-width: 680px){
-    .filter-tip {
-        top: 400px;
-    }
-}
-
-@media (max-width: 500px){
     .filter-tip {
         top: 372px;
     }

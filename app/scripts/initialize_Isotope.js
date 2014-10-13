@@ -36,7 +36,6 @@ $('.filter-two-button').click(function(){
 
 $('.filter-all-button').click(function(){
 	if (!filterOneClicked && !filterTwoClicked && !filterAllClicked) {
-		console.log('Filter the gallery by selecting \"Blushing Beauties\" or \"Foxy Ladies\", then select \"all\" to view all again')
 		$('.filter-tip').fadeIn( 400 ).delay( 5000 ).fadeOut( 400 );
 	}	
 	filterAllClicked = true;
