@@ -19,6 +19,7 @@ $(document).ready(function() {
 		// see docs http://isotope.metafizzy.co/layout-modes.html
 		layoutMode: 'masonry'
 	});
+	$('.dynamic-gallery').isotope({ filter: '*' });
 });
 
 // Filters
