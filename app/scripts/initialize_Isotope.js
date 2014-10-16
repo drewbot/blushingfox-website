@@ -16,8 +16,7 @@ $('.dynamic-gallery').isotope({
 	itemSelector: '.gallery-image',
 	// Set layout mode to masonry ("pinterest style")
 	// see docs http://isotope.metafizzy.co/layout-modes.html
-	layoutMode: 'masonry',
-	filter: '*'
+	layoutMode: 'masonry'
 });
 
 // Filters
