@@ -10,13 +10,15 @@ var filterOneClicked = false;
 var filterTwoClicked = false;
 var filterAllClicked = false;
 
-// Initialize Isotope and set grid container by calling class
-$('.dynamic-gallery').isotope({
-	// Set items to be placed in grid by calling class
-	itemSelector: '.gallery-image',
-	// Set layout mode to masonry ("pinterest style")
-	// see docs http://isotope.metafizzy.co/layout-modes.html
-	layoutMode: 'masonry'
+$(document).ready(function() {
+	// Initialize Isotope and set grid container by calling class
+	$('.dynamic-gallery').isotope({
+		// Set items to be placed in grid by calling class
+		itemSelector: '.gallery-image',
+		// Set layout mode to masonry ("pinterest style")
+		// see docs http://isotope.metafizzy.co/layout-modes.html
+		layoutMode: 'masonry'
+	});
 });
 
 // Filters

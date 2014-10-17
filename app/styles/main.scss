@@ -5,7 +5,7 @@
 
 @font-face {
     font-family: 'icon'; /*a name to be used later*/
-    src: url('../fonts/leksico-webfont.ttf'); /*URL to font*/
+    src: url('fonts/leksico-webfont.ttf'); /*URL to font*/
 }
 
 * {
@@ -299,32 +299,68 @@ header {
     height: 100%;
     list-style: none;
     font-size: 2em;
-    font-weight: 300;
+    font-weight: 100;
+    text-align: center;
+    line-height: 2.4em;
     background-color: rgba(59, 59, 59, 0.87);
     cursor: pointer;
     z-index: 9998;
     -webkit-transition: all 0.4s ease;
 
-    li {
-        text-align: center;
-        line-height: 2em;
-
-        &:hover {
-            background-color: rgba(74, 74, 74, 0.5);
-        }
-
-        &.selected {
-            color: #C4C4C4;
-        }
-    }
-
     a {
         color: #FFF;
-        width: 100%;
         text-decoration: none;
 
         &:active {
             background-color: rgba(74, 74, 74, 0.5);
+        }
+    }
+
+    li {
+        width: 50%;
+        max-width: 480px;
+        border-bottom: 1px solid rgba(255,255,255, 0.7);
+        -webkit-transition: all 0.2s ease;
+
+        &:hover {
+            font-size: 1.05em;
+            background-color: rgba(74, 74, 74, 0.5);
+            -webkit-transition: all 0.1s ease;
+        }
+
+        &.selected {
+            // background-color: rgba(74, 74, 74, 1);
+        }
+    }
+
+    .nav-social {
+        margin: 20px 0 20px 0;
+        font-family: 'icon';
+
+        a {
+            padding: 0 42px 0 0;
+            text-decoration: none;
+        }
+
+        li {
+            display: inline;
+            list-style: none;
+            color: rgba(255,255,255, 0.9);
+            border-bottom: none;
+
+            &:hover {
+                font-size: 1em;
+                color: rgba(255,255,255, 0.6);
+            }
+        }
+    }   
+}
+
+@media (max-width: 680px) {
+    .nav {
+        
+        li {
+            width: 100%;
         }
     }
 }
@@ -407,40 +443,45 @@ footer {
     li {
         display: inline;
         list-style: none;
+        color: rgba(255,255,255, 1.0);
+
+        &:hover {
+            color: rgba(255,255,255, 0.7);
+        }
     }
 }
 
-.fa-facebook-square {
-    color: rgba(59, 89, 152, 1);
+// .fa-facebook-square {
+//     color: rgba(59, 89, 152, 1);
 
-    &:hover {
-        color: rgba(59, 89, 152, 0.8);
-    }
-}
+//     &:hover {
+//         color: rgba(59, 89, 152, 0.8);
+//     }
+// }
 
-.fa-pinterest-square {
-    color: rgba(203, 32, 39, 1);
+// .fa-pinterest-square {
+//     color: rgba(203, 32, 39, 1);
 
-    &:hover {
-        color: rgba(203, 32, 39, 0.8);
-    }
-}
+//     &:hover {
+//         color: rgba(203, 32, 39, 0.8);
+//     }
+// }
 
-.fa-instagram {
-    color: rgba(81, 127, 164, 1);
+// .fa-instagram {
+//     color: rgba(81, 127, 164, 1);
 
-    &:hover {
-        color: rgba(81, 127, 164, 0.8);
-    }
-}
+//     &:hover {
+//         color: rgba(81, 127, 164, 0.8);
+//     }
+// }
 
-.fa-tumblr-square {
-    color: rgba(50, 80, 109, 1);
+// .fa-tumblr-square {
+//     color: rgba(50, 80, 109, 1);
 
-    &:hover {
-        color: rgba(50, 80, 109, 0.8);
-    }
-}
+//     &:hover {
+//         color: rgba(50, 80, 109, 0.8);
+//     }
+// }
 
 /* --- Home Page --- */
 
