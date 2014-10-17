@@ -1,7 +1,7 @@
 
 // Click logo to go to home page
 $('.logo').click(function(){
-	window.location.href = "index.html";
+	window.location.href = "../index.html";
 })
 
 // Click logo to go to home page (from session pages)
