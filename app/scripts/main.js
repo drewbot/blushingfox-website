@@ -6,7 +6,7 @@ $('.logo').click(function(){
 
 // Click logo to go to home page (from session pages)
 $('.session-logo').click(function(){
-	window.location.href = "../index.html";
+	window.location.href = "../../index.html";
 })
 
 // Click menu icon to show nav
