@@ -1,8 +1,11 @@
 // bower:scss
 // endbower
 
+/* Font Awesome */
+@import 'font-awesome.min.css';
+/* Lato */
 @import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700,300italic,400italic,700italic);
-
+/* Leksico */
 @font-face {
     font-family: 'icon'; /*a name to be used later*/
     src: url('fonts/leksico-webfont.ttf'); /*URL to font*/
@@ -235,16 +238,6 @@ header {
     cursor: pointer;
 }
 
-// .menu {
-//     position: fixed;
-//     top: 0px;
-//     right: 0px;
-//     width: 146px;
-//     height: 55px;
-//     background-color: #fff;
-//     z-index: 9998;
-// }
-
 .menu-icon, .menu-x-icon {
     padding: 15px 25px 10px 20px;
     display: inline-block;
@@ -317,8 +310,7 @@ header {
     }
 
     li {
-        width: 50%;
-        max-width: 480px;
+        max-width: 520px;
         border-bottom: 1px solid rgba(255,255,255, 0.7);
         -webkit-transition: all 0.2s ease;
 
